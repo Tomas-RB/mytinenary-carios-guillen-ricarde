@@ -1,0 +1,170 @@
+#app {
+    height: 100%;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #151C2E;
+}
+
+.swiper-pagination-horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #151C2E;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #151C2E;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    stroke-width: 5px;
+    stroke: #151C2E;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.SwiperSlide{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+
+
+.SwiperSlide div{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.SwiperSlide div div{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+
+.SwiperSlide div div .blue{
+    position: absolute;
+    background-color: #151C2E;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    border-top: 1px solid white;
+}
+
+.SwiperSlide div div .blue h3{
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SwiperSlide div div .blue h3 span{
+    font-size: 12.5px !important;
+}
+
+.SwiperSlide div div .yellow{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/Location.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.oneOne{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAmstermdam(Netherlands).svg?alt=media&token=d7c1f050-0737-4966-9ed1-afc0c5127a49");
+}
+
+.oneTwo {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAthens(Greece).svg?alt=media&token=e4dd1699-6408-4923-8867-f4d62220b7ab");
+}
+
+.oneThree {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FBangkok(Thailand).svg?alt=media&token=923fb304-0632-4bff-ac39-211ae2990bae");
+}
+
+.oneFour {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FBerlin(Germany).svg?alt=media&token=07b27990-161a-42f5-86a4-76dccd7f7d9b");
+}
+
+.twoOne{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FCairo(Egypt).svg?alt=media&token=a8ee542d-e447-4a9b-99b6-08d5d44b85db");
+}
+
+.twoTwo{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FDubai(United%20Arab%20Emirates).svg?alt=media&token=294e9633-cc56-453f-ba3c-5b4e990e9a7d");
+}
+
+.twoThree {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FHong%20Kong(Chinese).svg?alt=media&token=cb38dafc-5a5e-48a5-8031-ae97fc2b3c9f");
+}
+
+.twoFour{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FJohannesburg(South%20Africa).svg?alt=media&token=0638757f-a9ba-4b80-a89f-2af4c797cc04");
+}
+
+.threeOne{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FMexico%20City(Mexico).svg?alt=media&token=e99657b0-dae3-44ad-9e97-df6be9034132")
+}
+
+.threeTwo{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FRio%20de%20Janeiro(Brazil).svg?alt=media&token=cbefb3b3-5307-461d-a8b1-46b5599822d6");
+}
+
+.threeThree{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FTokyo(Japan).svg?alt=media&token=1b41d557-3ab8-4952-aa97-0c5bcec32a29");
+}
+
+.threeFour{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FToronto(Canada).svg?alt=media&token=5fec596c-313c-479e-89b5-5e2c79a130fa");
+}
